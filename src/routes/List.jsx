@@ -6,11 +6,11 @@ import {
   Divider,
   Heading,
 } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 import { CardSelect } from '../components/CardSelect';
 import { CardInfo } from '../components/CardInfo';
 import citiesYauyos from '../data/citiesYauyos.json';
-import infobras from '../data/infobras.json';
-import { Link } from 'react-router-dom';
+import obras from '../data/obras.json';
 
 const departmentsPeru = [
   {
@@ -59,7 +59,7 @@ export const List = () => {
       </Button>
       <Divider marginY={10} />
       <SimpleGrid minChildWidth="xs" spacing={10}>
-        <CardInfo arr={infobras} />
+        <CardInfo arr={obras} />
       </SimpleGrid>
     </Container>
   );

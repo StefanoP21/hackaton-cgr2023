@@ -14,7 +14,7 @@ import {
   TableContainer,
 } from '@chakra-ui/react';
 
-export const TableObra = () => {
+export const TableObra = ({ enterprise, ruc, amount, person, dni, cip }) => {
   return (
     <div>
       <Accordion allowToggle>
@@ -39,7 +39,7 @@ export const TableObra = () => {
                 </Thead>
                 <Tbody>
                   <Tr>
-                    <Td textAlign="center">MURGISA SERVICIOS GENERALES SRL</Td>
+                    <Td textAlign="center">{enterprise}L</Td>
                   </Tr>
                 </Tbody>
                 <Thead>
@@ -51,7 +51,7 @@ export const TableObra = () => {
                 </Thead>
                 <Tbody>
                   <Tr>
-                    <Td textAlign="center">20399019355</Td>
+                    <Td textAlign="center">{ruc}</Td>
                   </Tr>
                 </Tbody>
                 <Thead>
@@ -63,7 +63,7 @@ export const TableObra = () => {
                 </Thead>
                 <Tbody>
                   <Tr>
-                    <Td textAlign="center">S/. 235,110.87</Td>
+                    <Td textAlign="center">S/. {amount}</Td>
                   </Tr>
                 </Tbody>
               </Table>
@@ -92,7 +92,7 @@ export const TableObra = () => {
                 </Thead>
                 <Tbody>
                   <Tr>
-                    <Td textAlign="center">JOSELITO FLORES CARRION</Td>
+                    <Td textAlign="center">{person}</Td>
                   </Tr>
                 </Tbody>
                 <Thead>
@@ -104,7 +104,7 @@ export const TableObra = () => {
                 </Thead>
                 <Tbody>
                   <Tr>
-                    <Td textAlign="center">18194742</Td>
+                    <Td textAlign="center">{dni}</Td>
                   </Tr>
                 </Tbody>
                 <Thead>
@@ -116,7 +116,7 @@ export const TableObra = () => {
                 </Thead>
                 <Tbody>
                   <Tr>
-                    <Td textAlign="center">68920</Td>
+                    <Td textAlign="center">{cip}</Td>
                   </Tr>
                 </Tbody>
               </Table>

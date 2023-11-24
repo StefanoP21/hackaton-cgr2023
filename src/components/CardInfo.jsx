@@ -16,47 +16,68 @@ import { Link } from 'react-router-dom';
 export const CardInfo = ({ arr }) => {
   return (
     <>
-      {arr.map(({ codINFOBRAS, imageURL, title, description, cost }) => (
-        <Card w={['xs', 'sm']} key={codINFOBRAS}>
-          <CardBody>
-            <Image src={imageURL} alt={title} borderRadius="lg" w="sm" />
-            <Stack mt="6" spacing="3">
-              <Heading size="md">{title}</Heading>
-              <Text fontSize="small">{description}</Text>
-              <Text color="teal.800" fontSize="2xl">
-                {cost}
-              </Text>
-            </Stack>
-          </CardBody>
-          <Divider />
-          <CardFooter>
-            <ButtonGroup spacing="4">
-              <Link to={`/infobras/${codINFOBRAS}`}>
-                <Button
-                  rightIcon={<InfoIcon />}
-                  variant="solid"
-                  colorScheme="blue"
+      {arr.map(
+        ({
+          codINFOBRAS,
+          imageURL,
+          name,
+          entity,
+          modality,
+          type,
+          state,
+          local,
+          address,
+          amount,
+          enterprise,
+          ruc,
+          person,
+          dni,
+          cip,
+        }) => (
+          <Card w={['xs', 'sm']} key={codINFOBRAS}>
+            <CardBody>
+              <Image src={imageURL} alt={entity} borderRadius="lg" w="sm" />
+              <Stack mt="6" spacing="3">
+                <Heading size="md">{entity}</Heading>
+                <Text fontSize="small">{name}</Text>
+                <Text color="teal.800" fontSize="2xl">
+                  S/. {amount}
+                </Text>
+              </Stack>
+            </CardBody>
+            <Divider />
+            <CardFooter>
+              <ButtonGroup spacing="6">
+                {/* TODO: Add link to report */}
+                <Link
+                  to={`/lista/infobra/${codINFOBRAS}?imageURL=${imageURL}&entity=${entity}&name=${name}&amount=${amount}&local=${local}&address=${address}&enterprise=${enterprise}&ruc=${ruc}&person=${person}&dni=${dni}&cip=${cip}&modality=${modality}&type=${type}&state=${state}`}
+                  key={codINFOBRAS}
                 >
-                  Saber más
-                </Button>
-              </Link>
-              {/* TODO: Add link to report */}
-              <Link
-                to={`https://github.com/StefanoP21/hackaton-cgr2023`}
-                target="_blank"
-              >
-                <Button
-                  rightIcon={<WarningIcon />}
-                  variant="solid"
-                  colorScheme="red"
+                  <Button
+                    rightIcon={<InfoIcon />}
+                    variant="solid"
+                    colorScheme="blue"
+                  >
+                    Saber más
+                  </Button>
+                </Link>
+                <Link
+                  to={`https://github.com/StefanoP21/hackaton-cgr2023`}
+                  target="_blank"
                 >
-                  Reportar
-                </Button>
-              </Link>
-            </ButtonGroup>
-          </CardFooter>
-        </Card>
-      ))}
+                  <Button
+                    rightIcon={<WarningIcon />}
+                    variant="solid"
+                    colorScheme="red"
+                  >
+                    Reportar
+                  </Button>
+                </Link>
+              </ButtonGroup>
+            </CardFooter>
+          </Card>
+        )
+      )}
     </>
   );
 };

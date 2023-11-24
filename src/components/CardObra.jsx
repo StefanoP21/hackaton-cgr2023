@@ -11,7 +11,17 @@ import {
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
-export const CardObra = () => {
+export const CardObra = ({
+  imageURL,
+  name,
+  entity,
+  modality,
+  type,
+  state,
+  local,
+  address,
+  amount,
+}) => {
   return (
     <Card
       direction={{ base: 'column', md: 'row' }}
@@ -22,39 +32,39 @@ export const CardObra = () => {
       <Image
         objectFit="cover"
         maxW={{ base: '100%', md: '500px' }}
-        src="https://cdn.www.gob.pe/uploads/document/file/2486159/standard_20211122_122806.jpg.jpg"
-        alt="MUNICIPALIDAD DISTRITAL DE HUANTAN"
+        src={imageURL}
+        alt={name}
       />
       <Stack>
         <CardBody paddingBottom={0}>
           <Heading size="sm" paddingBottom="4">
-            CREACION DE PAVIMENTO Y ESCALINATAS EN EL CAMINO DE ACCESO AL
-            MIRADOR DIOS KAJLLA DISTRITO DE HUANTAN YAUYOS LIMA
+            {name}
           </Heading>
           <Text py="2">
-            <b>Entidad:</b> MUNICIPALIDAD DISTRITAL DE HUANTAN
+            <b>Entidad:</b> {entity}
           </Text>
           <Text py="2">
-            <b>Modalidad:</b> Administración Directa
+            <b>Modalidad:</b> {modality}
           </Text>
           <Text py="2">
-            <b>Tipo de obra:</b> Transporte Urbano - Pista y Vereda
+            <b>Tipo de obra:</b> {type}
           </Text>
           <Text py="2">
-            <b>Estado:</b> Finalizado
+            <b>Estado:</b> {state}
           </Text>
           <Text py="2">
-            <b>Ubicación:</b> LIMA - YAUYOS - HUAÑEC
+            <b>Ubicación:</b> {local}
           </Text>
           <Text py="2">
-            <b>Dirección:</b> PLAZA PRINCIPAL S/N HUAÑEC YAUYOS
+            <b>Dirección:</b> {address}
           </Text>
           <Text py="2">
-            <b>Monto aprobado:</b> S/. 235,110.87
+            <b>Monto aprobado:</b> S/. {amount}
           </Text>
         </CardBody>
 
         <CardFooter>
+          {/* TODO: Add link to report */}
           <Link
             to={`https://github.com/StefanoP21/hackaton-cgr2023`}
             target="_blank"
