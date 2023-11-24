@@ -1,8 +1,7 @@
 import { ArrowLeftIcon } from '@chakra-ui/icons';
 import { Container, Heading, Button } from '@chakra-ui/react';
 import { Link, useLocation } from 'react-router-dom';
-import { CardObra } from '../components/CardObra';
-import { TableObra } from '../components/TableObra';
+import { CardObra, TableObra } from '../components';
 
 export const Infobra = () => {
   const location = useLocation();
@@ -48,7 +47,7 @@ export const Infobra = () => {
   } = paramValues;
 
   return (
-    <Container maxWidth="8xl" paddingX={10} marginY={10}>
+    <Container maxWidth="8xl" padding={10}>
       <Link to="/lista">
         <Button
           leftIcon={<ArrowLeftIcon />}

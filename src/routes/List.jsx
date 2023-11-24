@@ -7,28 +7,15 @@ import {
   Heading,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import { CardSelect } from '../components/CardSelect';
-import { CardInfo } from '../components/CardInfo';
+import { CardSelect, CardInfo } from '../components';
+import departmentsPeru from '../data/departmentsPeru.json';
+import provincesLima from '../data/provincesLima.json';
 import citiesYauyos from '../data/citiesYauyos.json';
 import obras from '../data/obras.json';
 
-const departmentsPeru = [
-  {
-    id: 1,
-    name: 'Lima',
-  },
-];
-
-const provincesLima = [
-  {
-    id: 1,
-    name: 'Yauyos',
-  },
-];
-
 export const List = () => {
   return (
-    <Container maxWidth="8xl" paddingX={10} marginY={10}>
+    <Container maxWidth="8xl" padding={10}>
       <Link to="/">
         <Button
           leftIcon={<ArrowLeftIcon />}
@@ -44,9 +31,9 @@ export const List = () => {
         Obras para la Reconstrucción con Cambios 2023
       </Heading>
       <SimpleGrid minChildWidth="xs" spacing={10}>
-        <CardSelect title="Departamentos" arr={departmentsPeru} />
-        <CardSelect title="Provincias" arr={provincesLima} />
-        <CardSelect title="Distritos" arr={citiesYauyos} />
+        <CardSelect title="Departamento" items={departmentsPeru} />
+        <CardSelect title="Provincia" items={provincesLima} />
+        <CardSelect title="Distrito" items={citiesYauyos} />
       </SimpleGrid>
       <Button
         leftIcon={<Search2Icon />}
@@ -59,7 +46,7 @@ export const List = () => {
       </Button>
       <Divider marginY={10} />
       <SimpleGrid minChildWidth="xs" spacing={10}>
-        <CardInfo arr={obras} />
+        <CardInfo items={obras} />
       </SimpleGrid>
     </Container>
   );

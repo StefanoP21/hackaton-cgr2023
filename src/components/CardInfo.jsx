@@ -13,10 +13,10 @@ import {
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
-export const CardInfo = ({ arr }) => {
+export const CardInfo = ({ items }) => {
   return (
     <>
-      {arr.map(
+      {items.map(
         ({
           codINFOBRAS,
           imageURL,
