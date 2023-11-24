@@ -5,11 +5,11 @@ export const Home = () => {
   return (
     <div>
       <h1>Home</h1>
-      <Link to="list">Obras</Link>
+      <Link to="lista">Obras</Link>
       <br />
-      <Link to="info">Información</Link>
+      <Link to="infobras">Información</Link>
       <br />
-      <Link to="learn">Aprendizaje</Link>
+      <Link to="aprendizaje">Aprendizaje</Link>
     </div>
   );
 };

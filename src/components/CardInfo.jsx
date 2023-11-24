@@ -11,6 +11,7 @@ import {
   ButtonGroup,
   Button,
 } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 export const CardInfo = ({ arr }) => {
   return (
@@ -30,20 +31,28 @@ export const CardInfo = ({ arr }) => {
           <Divider />
           <CardFooter>
             <ButtonGroup spacing="4">
-              <Button
-                rightIcon={<InfoIcon />}
-                variant="solid"
-                colorScheme="blue"
+              <Link to={`/infobras/${codINFOBRAS}`}>
+                <Button
+                  rightIcon={<InfoIcon />}
+                  variant="solid"
+                  colorScheme="blue"
+                >
+                  Saber más
+                </Button>
+              </Link>
+              {/* TODO: Add link to report */}
+              <Link
+                to={`https://github.com/StefanoP21/hackaton-cgr2023`}
+                target="_blank"
               >
-                Saber más
-              </Button>
-              <Button
-                rightIcon={<WarningIcon />}
-                variant="solid"
-                colorScheme="red"
-              >
-                Reportar
-              </Button>
+                <Button
+                  rightIcon={<WarningIcon />}
+                  variant="solid"
+                  colorScheme="red"
+                >
+                  Reportar
+                </Button>
+              </Link>
             </ButtonGroup>
           </CardFooter>
         </Card>

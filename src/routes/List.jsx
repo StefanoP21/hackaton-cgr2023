@@ -5,7 +5,6 @@ import {
   Button,
   Divider,
   Heading,
-  IconButton,
 } from '@chakra-ui/react';
 import { CardSelect } from '../components/CardSelect';
 import { CardInfo } from '../components/CardInfo';
