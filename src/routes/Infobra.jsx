@@ -1,11 +1,12 @@
 import { ArrowLeftIcon } from '@chakra-ui/icons';
 import { Container, Heading, Button } from '@chakra-ui/react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { CardObra, TableObra } from '../components';
 
 export const Infobra = () => {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
+  const { codINFOBRAS } = useParams();
 
   const paramNames = [
     'imageURL',
@@ -53,7 +54,7 @@ export const Infobra = () => {
           leftIcon={<ArrowLeftIcon />}
           colorScheme="teal"
           size="md"
-          variant="solid"
+          variant="outline"
           marginBottom={5}
         >
           Regresar
@@ -63,6 +64,7 @@ export const Infobra = () => {
         Información de la Obra
       </Heading>
       <CardObra
+        codINFOBRAS={codINFOBRAS}
         imageURL={imageURL}
         name={name}
         entity={entity}

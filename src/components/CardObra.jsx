@@ -1,4 +1,4 @@
-import { WarningIcon } from '@chakra-ui/icons';
+import { WarningIcon, CopyIcon } from '@chakra-ui/icons';
 import {
   Card,
   CardBody,
@@ -8,10 +8,12 @@ import {
   Heading,
   Text,
   Button,
+  ButtonGroup,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
 export const CardObra = ({
+  codINFOBRAS,
   imageURL,
   name,
   entity,
@@ -41,6 +43,9 @@ export const CardObra = ({
             {name}
           </Heading>
           <Text py="2">
+            <b>Código INFOBRAS:</b> {codINFOBRAS}
+          </Text>
+          <Text py="2">
             <b>Entidad:</b> {entity}
           </Text>
           <Text py="2">
@@ -64,19 +69,28 @@ export const CardObra = ({
         </CardBody>
 
         <CardFooter>
-          {/* TODO: Add link to report */}
-          <Link
-            to={`https://github.com/StefanoP21/hackaton-cgr2023`}
-            target="_blank"
-          >
-            <Button
-              rightIcon={<WarningIcon />}
-              variant="solid"
-              colorScheme="red"
+          <ButtonGroup spacing="6">
+            {/* TODO: Add link to report */}
+            <Link
+              to={`https://github.com/StefanoP21/hackaton-cgr2023`}
+              target="_blank"
             >
-              Reportar
+              <Button
+                rightIcon={<WarningIcon />}
+                variant="solid"
+                colorScheme="red"
+              >
+                Reportar
+              </Button>
+            </Link>
+            <Button
+              leftIcon={<CopyIcon />}
+              variant="outline"
+              colorScheme="teal"
+            >
+              {codINFOBRAS}
             </Button>
-          </Link>
+          </ButtonGroup>
         </CardFooter>
       </Stack>
     </Card>

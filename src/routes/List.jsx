@@ -21,7 +21,7 @@ export const List = () => {
           leftIcon={<ArrowLeftIcon />}
           colorScheme="teal"
           size="md"
-          variant="solid"
+          variant="outline"
           marginBottom={5}
         >
           Regresar
