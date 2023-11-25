@@ -39,40 +39,42 @@ const features = [
 
 export const Features = () => {
   return (
-    <Container maxW={'8xl'} padding={10} bg="gray.50">
-      <Box p={4}>
-        <Stack spacing={4} as={Container} maxW={'4xl'} textAlign={'center'}>
-          <Heading
-            fontSize={{ base: '2xl', sm: '4xl' }}
-            fontWeight={'bold'}
-            mb={5}
-          >
-            Nuestro Objetivo
-          </Heading>
-          <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
-            Queremos que tengas toda la información de las obras públicas de
-            prevención del fenómeno del niño que se vienen ejecutando en tu
-            localidad. Además, queremos que detectes las obras que no se están
-            ejecutando con normalidad y que nos ayudes a reportarlas para que se
-            tomen las medidas correctivas.
-          </Text>
-        </Stack>
+    <div style={{ background: '#F7FAFC' }}>
+      <Container maxW={'8xl'} padding={10}>
+        <Box p={4}>
+          <Stack spacing={4} as={Container} maxW={'4xl'} textAlign={'center'}>
+            <Heading
+              fontSize={{ base: '2xl', sm: '4xl' }}
+              fontWeight={'bold'}
+              mb={5}
+            >
+              Nuestro Objetivo
+            </Heading>
+            <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
+              Queremos que tengas toda la información de las obras públicas de
+              prevención del fenómeno del niño que se vienen ejecutando en tu
+              localidad. Además, queremos que detectes las obras que no se están
+              ejecutando con normalidad y que nos ayudes a reportarlas para que
+              se tomen las medidas correctivas.
+            </Text>
+          </Stack>
 
-        <Container maxW={'5xl'} mt={12}>
-          <Flex flexWrap="wrap" gridGap={6} justify="center">
-            {features.map(({ key, heading, description, icon }) => {
-              return (
-                <Card
-                  key={key}
-                  heading={heading}
-                  description={description}
-                  icon={icon}
-                />
-              );
-            })}
-          </Flex>
-        </Container>
-      </Box>
-    </Container>
+          <Container maxW={'5xl'} mt={12}>
+            <Flex flexWrap="wrap" gridGap={6} justify="center">
+              {features.map(({ key, heading, description, icon }) => {
+                return (
+                  <Card
+                    key={key}
+                    heading={heading}
+                    description={description}
+                    icon={icon}
+                  />
+                );
+              })}
+            </Flex>
+          </Container>
+        </Box>
+      </Container>
+    </div>
   );
 };

@@ -9,7 +9,6 @@ export const App = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/hackaton-cgr2023" element={<Home />} />
         <Route path="/inicio" element={<Home />} />
         <Route path="/lista" element={<List />} />
         <Route path="/lista/infobra/:codINFOBRAS" element={<Infobra />} />
