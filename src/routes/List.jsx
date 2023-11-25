@@ -16,7 +16,7 @@ import obras from '../data/obras.json';
 export const List = () => {
   return (
     <Container maxWidth="8xl" padding={10}>
-      <Link to="/">
+      <Link to="/inicio">
         <Button
           leftIcon={<ArrowLeftIcon />}
           colorScheme="gray"

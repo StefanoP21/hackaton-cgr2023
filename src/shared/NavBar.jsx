@@ -9,7 +9,7 @@ import {
 const items = [
   {
     label: 'Inicio',
-    to: '/',
+    to: '/inicio',
   },
   {
     label: 'Obras',
