@@ -12,11 +12,11 @@ const items = [
     to: '/',
   },
   {
-    label: 'Lista',
+    label: 'Obras',
     to: '/lista',
   },
   {
-    label: 'Aprendizaje',
+    label: 'Capacítate',
     to: '/aprendizaje',
   },
 ];
@@ -26,9 +26,9 @@ export const NavBar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div style={{ background: '#E53E3E' }}>
+    <div style={{ background: '#C53030' }}>
       <NavBarContainer>
-        <Logo title="EcoHackers" />
+        <Logo title="APUCHAY" />
         <MenuToggle toggle={toggleMenu} isOpen={isOpen} />
         <MenuLinks isOpen={isOpen} items={items} />
       </NavBarContainer>

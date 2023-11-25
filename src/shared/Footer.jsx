@@ -11,7 +11,7 @@ import { Logo, SocialButton } from '../components/footer';
 
 export const Footer = () => {
   return (
-    <Box bg={useColorModeValue('red.500')} color={useColorModeValue('white')}>
+    <Box bg={useColorModeValue('red.600')} color={useColorModeValue('white')}>
       <Container
         as={Stack}
         maxW={'8xl'}
@@ -22,7 +22,7 @@ export const Footer = () => {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}
       >
-        <Logo title="EcoHackers" />
+        <Logo title="APUCHAY" />
         <Text>© 2023 Hackathon. Stefano Palomino</Text>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Phone'} href={'tel:+51987052642'}>

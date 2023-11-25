@@ -20,7 +20,7 @@ export const TableObra = ({ enterprise, ruc, amount, person, dni, cip }) => {
       <Accordion allowToggle>
         <AccordionItem>
           <h2>
-            <AccordionButton _expanded={{ bg: 'teal', color: 'white' }}>
+            <AccordionButton _expanded={{ bg: 'red.700', color: 'white' }}>
               <Box as="span" flex="1" textAlign="left">
                 INFORMACIÓN DE LA EMPRESA
               </Box>
@@ -73,7 +73,7 @@ export const TableObra = ({ enterprise, ruc, amount, person, dni, cip }) => {
 
         <AccordionItem>
           <h2>
-            <AccordionButton _expanded={{ bg: 'teal', color: 'white' }}>
+            <AccordionButton _expanded={{ bg: 'red.700', color: 'white' }}>
               <Box as="span" flex="1" textAlign="left">
                 INFORMACIÓN DEL SUPERVISOR
               </Box>

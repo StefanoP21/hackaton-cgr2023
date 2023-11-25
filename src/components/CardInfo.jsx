@@ -39,7 +39,7 @@ export const CardInfo = ({ items }) => {
               <Stack mt="6" spacing="3">
                 <Heading size="md">{entity}</Heading>
                 <Text fontSize="small">{name}</Text>
-                <Text color="teal.800" fontSize="2xl">
+                <Text fontSize="2xl" fontWeight={600}>
                   S/. {amount}
                 </Text>
               </Stack>
@@ -52,8 +52,8 @@ export const CardInfo = ({ items }) => {
               >
                 <Button
                   rightIcon={<InfoIcon />}
-                  variant="solid"
-                  colorScheme="blue"
+                  variant="outline"
+                  colorScheme="red"
                 >
                   Más información
                 </Button>

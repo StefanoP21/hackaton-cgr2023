@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { Home, List, Learn, Infobra } from './routes';
+import { Home, List, Learn, Infobra, NotFound } from './routes';
 import { NavBar, Footer } from './shared';
 
 export const App = () => {
@@ -12,6 +12,7 @@ export const App = () => {
         <Route path="/lista" element={<List />} />
         <Route path="/lista/infobra/:codINFOBRAS" element={<Infobra />} />
         <Route path="/aprendizaje" element={<Learn />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />

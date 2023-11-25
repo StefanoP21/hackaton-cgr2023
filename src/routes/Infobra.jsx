@@ -52,7 +52,7 @@ export const Infobra = () => {
       <Link to="/lista">
         <Button
           leftIcon={<ArrowLeftIcon />}
-          colorScheme="teal"
+          colorScheme="gray"
           size="md"
           variant="outline"
           marginBottom={5}
@@ -60,7 +60,7 @@ export const Infobra = () => {
           Regresar
         </Button>
       </Link>
-      <Heading size="lg" marginBottom={10} color="teal">
+      <Heading size="lg" marginBottom={10} color="red.600">
         Información de la Obra
       </Heading>
       <CardObra

@@ -42,7 +42,7 @@ export const CardObra = ({
           <Heading size="sm" paddingBottom="4">
             {name}
           </Heading>
-          <Text py="2">
+          <Text py="2" bg="yellow">
             <b>Código INFOBRAS:</b> {codINFOBRAS}
           </Text>
           <Text py="2">
@@ -86,7 +86,7 @@ export const CardObra = ({
             <Button
               leftIcon={<CopyIcon />}
               variant="outline"
-              colorScheme="teal"
+              colorScheme="blue"
             >
               {codINFOBRAS}
             </Button>

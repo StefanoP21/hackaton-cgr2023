@@ -19,7 +19,7 @@ export const List = () => {
       <Link to="/">
         <Button
           leftIcon={<ArrowLeftIcon />}
-          colorScheme="teal"
+          colorScheme="gray"
           size="md"
           variant="outline"
           marginBottom={5}
@@ -27,7 +27,7 @@ export const List = () => {
           Regresar
         </Button>
       </Link>
-      <Heading size="lg" marginBottom={10} color="teal">
+      <Heading size="lg" marginBottom={10} color="red.600">
         Obras para la Reconstrucción con Cambios 2023
       </Heading>
       <SimpleGrid minChildWidth="xs" spacing={10}>
@@ -37,7 +37,7 @@ export const List = () => {
       </SimpleGrid>
       <Button
         leftIcon={<Search2Icon />}
-        colorScheme="teal"
+        colorScheme="red"
         size="md"
         variant="solid"
         marginTop={5}
