@@ -20,7 +20,7 @@ export const NotFound = () => {
         La página que estás buscando no existe o no se encuentra disponible.
       </Text>
 
-      <Link to="/">
+      <Link to="/hackaton-cgr2023/inicio">
         <Button
           colorScheme="teal"
           bgGradient="linear(to-r, teal.400, teal.500, teal.600)"

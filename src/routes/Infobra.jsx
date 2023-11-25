@@ -49,7 +49,7 @@ export const Infobra = () => {
 
   return (
     <Container maxWidth="8xl" padding={10}>
-      <Link to="/lista">
+      <Link to="/hackaton-cgr2023/lista">
         <Button
           leftIcon={<ArrowLeftIcon />}
           colorScheme="gray"

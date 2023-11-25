@@ -9,10 +9,14 @@ export const App = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/inicio" element={<Home />} />
-        <Route path="/lista" element={<List />} />
-        <Route path="/lista/infobra/:codINFOBRAS" element={<Infobra />} />
-        <Route path="/aprendizaje" element={<Learn />} />
+        <Route path="/hackaton-cgr2023/" element={<Home />} />
+        <Route path="/hackaton-cgr2023/inicio" element={<Home />} />
+        <Route path="/hackaton-cgr2023/lista" element={<List />} />
+        <Route
+          path="/hackaton-cgr2023/lista/infobra/:codINFOBRAS"
+          element={<Infobra />}
+        />
+        <Route path="/hackaton-cgr2023/aprendizaje" element={<Learn />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 

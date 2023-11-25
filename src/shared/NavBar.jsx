@@ -9,15 +9,15 @@ import {
 const items = [
   {
     label: 'Inicio',
-    to: '/inicio',
+    to: '/hackaton-cgr2023/inicio',
   },
   {
     label: 'Obras',
-    to: '/lista',
+    to: '/hackaton-cgr2023/lista',
   },
   {
     label: 'Capacítate',
-    to: '/aprendizaje',
+    to: '/hackaton-cgr2023/aprendizaje',
   },
 ];
 

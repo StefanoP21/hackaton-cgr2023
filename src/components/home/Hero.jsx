@@ -33,7 +33,7 @@ export const Hero = () => {
           decisiones de tu comunidad.
         </Text>
 
-        <Link to="/lista">
+        <Link to="/hackaton-cgr2023/lista">
           <Button
             rounded={'full'}
             p={6}
