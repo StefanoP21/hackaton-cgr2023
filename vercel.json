@@ -4,6 +4,7 @@
     { "src": "/inicio", "dest": "/" },
     { "src": "/lista", "dest": "/" },
     { "src": "/lista/infobra/:codINFOBRAS", "dest": "/" },
-    { "src": "/aprendizaje", "dest": "/" }
+    { "src": "/aprendizaje", "dest": "/" },
+    { "src": "*", "dest": "/" }
   ]
 }
