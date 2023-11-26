@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Yauyos"
+    "name": "Acaullama"
   },
   {
     "id": 2,
@@ -9,34 +9,22 @@
   },
   {
     "id": 3,
-    "name": "Laraos"
+    "name": "Caceres del Peru"
   },
   {
     "id": 4,
-    "name": "Ayavirí"
+    "name": "Cascas"
   },
   {
     "id": 5,
-    "name": "Omas"
+    "name": "Chicama"
   },
   {
     "id": 6,
-    "name": "Taurispampa"
+    "name": "Chiclayo"
   },
   {
     "id": 7,
-    "name": "Pampas (Colonia)"
-  },
-  {
-    "id": 8,
-    "name": "Viñac"
-  },
-  {
-    "id": 9,
-    "name": "Chupamarca"
-  },
-  {
-    "id": 10,
-    "name": "Huantán"
+    "name": "El Agustino"
   }
 ]

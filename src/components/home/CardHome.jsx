@@ -8,7 +8,7 @@ import {
   Icon,
 } from '@chakra-ui/react';
 
-export const Card = ({ heading, description, icon }) => {
+export const CardHome = ({ heading, description, icon }) => {
   return (
     <Box
       maxW={{ base: 'full', md: '275px' }}
@@ -33,7 +33,7 @@ export const Card = ({ heading, description, icon }) => {
         </Flex>
         <Box mt={2}>
           <Heading size="md">{heading}</Heading>
-          <Text mt={1} fontSize={'sm'}>
+          <Text mt={4} fontSize={'sm'}>
             {description}
           </Text>
         </Box>

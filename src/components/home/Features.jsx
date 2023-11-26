@@ -1,38 +1,27 @@
-import {
-  StarIcon,
-  QuestionIcon,
-  ViewIcon,
-  ChatIcon,
-  TimeIcon,
-} from '@chakra-ui/icons';
-import {
-  Box,
-  Container,
-  Flex,
-  Heading,
-  Icon,
-  Stack,
-  Text,
-} from '@chakra-ui/react';
-import { Card } from './CardHome';
+import { StarIcon, QuestionIcon, ViewIcon } from '@chakra-ui/icons';
+import { Box, Container, Flex, Heading, Stack, Text } from '@chakra-ui/react';
+import { CardHome } from './CardHome';
 
 const features = [
   {
     key: 1,
-    heading: 'Heading',
-    description: 'Lorem ipsum dolor sit amet catetur, adipisicing elit.',
+    heading: 'Fomentar la Participación Ciudadana',
+    description:
+      'Buscamos incrementar la participación de la comunidad en la supervisión y evaluación de proyectos en construcción. Empoderamos a los ciudadanos para que sean partícipes en el proceso, compartan sus observaciones, y contribuyan con su experiencia.',
     icon: StarIcon,
   },
   {
     key: 2,
-    heading: 'Heading',
-    description: 'Lorem ipsum dolor sit amet catetur, adipisicing elit.',
+    heading: 'Mejorar la Transparencia de los Proyectos ',
+    description:
+      'Garantizamos un acceso claro y comprensible a información detallada sobre presupuestos, plazos y progresos en proyectos de construcción. Nos esforzamos por ofrecer datos actualizados y precisos, promoviendo la transparencia en la gestión de fondos públicos.',
     icon: ViewIcon,
   },
   {
     key: 3,
-    heading: 'Heading',
-    description: 'Lorem ipsum dolor sit amet catetur, adipisicing elit.',
+    heading: 'Fortalecer la Resiliencia Comunitaria',
+    description:
+      'Facilitamos la respuesta proactiva de la comunidad ante posibles riesgos asociados al Fenómeno del Niño. Buscamos proporcionar alertas tempranas, información relevante y recursos educativos para que las comunidades estén mejor preparadas.',
     icon: QuestionIcon,
   },
 ];
@@ -63,7 +52,7 @@ export const Features = () => {
             <Flex flexWrap="wrap" gridGap={6} justify="center">
               {features.map(({ key, heading, description, icon }) => {
                 return (
-                  <Card
+                  <CardHome
                     key={key}
                     heading={heading}
                     description={description}

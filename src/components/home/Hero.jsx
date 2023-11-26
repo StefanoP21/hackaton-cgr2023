@@ -22,15 +22,17 @@ export const Hero = () => {
           fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
           lineHeight={'110%'}
         >
-          FORMA PARTE DEL{' '}
+          ¡FORMA PARTE DEL{' '}
           <Text as={'span'} color={'red.600'}>
             CONTROL!
           </Text>
         </Heading>
         <Text color={'gray.500'} maxW={'3xl'} fontWeight={600}>
-          La información de las obras públicas que se ejecutan en tu localidad
-          al lacance de tus manos; empodérate y participa en la toma de
-          decisiones de tu comunidad.
+          Te brindamos toda la información necesaria de las obras públicas de
+          prevención del Fenómeno del Niño que se ejecutan en tu localidad.
+          Además, te proporcionamos una herramienta con la que podrás reportas
+          obras que no se están ejecutando con normalidad y así nos apoyes para
+          la toma de medidas correctivas.
         </Text>
 
         <Link to="/hackaton-cgr2023/lista">

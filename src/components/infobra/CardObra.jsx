@@ -9,6 +9,7 @@ import {
   Text,
   Button,
   ButtonGroup,
+  useToast,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
@@ -24,6 +25,21 @@ export const CardObra = ({
   address,
   amount,
 }) => {
+  const toast = useToast();
+
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text).then(() => {
+      toast({
+        title: 'Copiado al portapapeles',
+        description: `El texto "${text}" ha sido copiado al portapapeles.`,
+        status: 'success',
+        duration: 3000,
+        isClosable: true,
+        colorScheme: 'blue',
+      });
+    });
+  };
+
   return (
     <Card
       direction={{ base: 'column', md: 'row' }}
@@ -42,7 +58,7 @@ export const CardObra = ({
           <Heading size="sm" paddingBottom="4">
             {name}
           </Heading>
-          <Text py="2" bg="yellow">
+          <Text py="2" bg="red.200">
             <b>Código INFOBRAS:</b> {codINFOBRAS}
           </Text>
           <Text py="2">
@@ -70,15 +86,20 @@ export const CardObra = ({
 
         <CardFooter>
           <ButtonGroup spacing="6">
-            {/* TODO: Add link to report */}
-            <Link
-              to={`https://github.com/StefanoP21/hackaton-cgr2023`}
-              target="_blank"
-            >
+            <Link to={`https://forms.gle/39s6ofcoEgNLgTow8`} target="_blank">
               <Button
                 rightIcon={<WarningIcon />}
                 variant="solid"
                 colorScheme="red"
+                onClick={() =>
+                  toast({
+                    title: 'Muchas gracias',
+                    description: 'Tu reporte ha sido enviado con éxito.',
+                    status: 'success',
+                    duration: 9000,
+                    isClosable: true,
+                  })
+                }
               >
                 Reportar
               </Button>
@@ -87,6 +108,7 @@ export const CardObra = ({
               leftIcon={<CopyIcon />}
               variant="outline"
               colorScheme="blue"
+              onClick={() => copyToClipboard(codINFOBRAS)}
             >
               {codINFOBRAS}
             </Button>
