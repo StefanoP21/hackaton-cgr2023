@@ -31,7 +31,7 @@ export const List = () => {
 
   return (
     <Container maxWidth="8xl" padding={10}>
-      <Link to="/hackaton-cgr2023/inicio">
+      {/* <Link to="/hackaton-cgr2023/inicio">
         <Button
           leftIcon={<ArrowLeftIcon />}
           colorScheme="gray"
@@ -41,7 +41,7 @@ export const List = () => {
         >
           Regresar
         </Button>
-      </Link>
+      </Link> */}
       <Heading size="lg" marginBottom={10} color="red.600">
         Obras para la Reconstrucción con Cambios 2023
       </Heading>

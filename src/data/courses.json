@@ -1,0 +1,20 @@
+[
+  {
+    "codCourse": "1",
+    "imageURL": "https://objectif-chrome.com/wp-content/uploads/2019/06/module1-actif.jpg",
+    "title": "Conociendo el Fenómeno del Niño",
+    "description": "Este segmento proporciona información clara sobre qué es el Fenómeno del Niño, cómo afecta a las comunidades y cuáles son los riesgos asociados. Creamos conciencia y comprensión entre los ciudadanos para que estén mejor preparados y puedan identificar los signos tempranos."
+  },
+  {
+    "codCourse": "2",
+    "imageURL": "https://objectif-chrome.com/wp-content/uploads/2019/06/module1-actif.jpg",
+    "title": "Tu rol en la comunidad",
+    "description": "La importancia de tu participación en la preparación y respuesta ante el Fenómeno del Niño, te proporcionamos orientación sobre cómo los ciudadanos pueden contribuir activamente, desde la supervisión de obras hasta la difusión de información crucial en sus comunidades."
+  },
+  {
+    "codCourse": "3",
+    "imageURL": "https://objectif-chrome.com/wp-content/uploads/2019/06/module1-actif.jpg",
+    "title": "Alertas y Previsiones meteorológicas",
+    "description": "Ofreciendo conocimientos prácticos, este segmento educa a los ciudadanos sobre cómo interpretar alertas meteorológicas relacionadas con el Fenómeno del Niño. Se centra en capacitar a la comunidad para comprender las señales climáticas y tomar medidas preventivas con anticipación."
+  }
+]

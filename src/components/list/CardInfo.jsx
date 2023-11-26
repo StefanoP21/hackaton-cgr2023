@@ -33,12 +33,14 @@ export const CardInfo = ({ items }) => {
           dni,
           cip,
         }) => (
-          <Card w={['xs', 'sm']} key={codINFOBRAS}>
+          <Card w={['xs', 'sm']} key={codINFOBRAS} borderRadius="3xl">
             <CardBody>
-              <Image src={imageURL} alt={entity} borderRadius="lg" w="sm" />
+              <Image src={imageURL} alt={entity} borderRadius="xl" w="sm" />
               <Stack mt="6" spacing="3">
                 <Heading size="md">{entity}</Heading>
-                <Text fontSize="small">{name}</Text>
+                <Text fontSize="small" textAlign="justify">
+                  {name}
+                </Text>
                 <Text fontSize="2xl" fontWeight={600}>
                   S/. {amount}
                 </Text>

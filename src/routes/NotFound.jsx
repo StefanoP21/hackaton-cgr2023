@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const NotFound = () => {
   return (
-    <Box textAlign="center" py={20} px={6}>
+    <Box textAlign="center" py={20} px={10}>
       <Heading
         display="inline-block"
         as="h2"

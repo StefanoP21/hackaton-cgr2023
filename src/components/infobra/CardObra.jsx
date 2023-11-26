@@ -46,6 +46,7 @@ export const CardObra = ({
       overflow="hidden"
       variant="outline"
       marginBottom={10}
+      borderRadius="3xl"
     >
       <Image
         objectFit="cover"
@@ -91,15 +92,6 @@ export const CardObra = ({
                 rightIcon={<WarningIcon />}
                 variant="solid"
                 colorScheme="red"
-                onClick={() =>
-                  toast({
-                    title: 'Muchas gracias',
-                    description: 'Tu reporte ha sido enviado con éxito.',
-                    status: 'success',
-                    duration: 9000,
-                    isClosable: true,
-                  })
-                }
               >
                 Reportar
               </Button>
