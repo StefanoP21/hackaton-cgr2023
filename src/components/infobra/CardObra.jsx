@@ -55,7 +55,7 @@ export const CardObra = ({
       />
       <Stack>
         <CardBody paddingBottom={0}>
-          <Heading size="sm" paddingBottom="4">
+          <Heading size="md" paddingBottom="4">
             {name}
           </Heading>
           <Text py="2" bg="red.200">
