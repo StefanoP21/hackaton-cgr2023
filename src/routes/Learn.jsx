@@ -1,5 +1,5 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
-import { CardLearn } from '../components/learn/CardLearn';
+import { CardLearn } from '../components/learn';
 import courses from '../data/courses.json';
 
 export const Learn = () => {

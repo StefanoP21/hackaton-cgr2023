@@ -35,7 +35,13 @@ export const CardInfo = ({ items }) => {
         }) => (
           <Card w={['xs', 'sm']} key={codINFOBRAS} borderRadius="3xl">
             <CardBody>
-              <Image src={imageURL} alt={entity} borderRadius="xl" w="sm" />
+              <Image
+                src={imageURL}
+                alt={entity}
+                borderRadius="xl"
+                w="sm"
+                loading="lazy"
+              />
               <Stack mt="6" spacing="3">
                 <Heading size="md">{entity}</Heading>
                 <Text fontSize="small" textAlign="justify">

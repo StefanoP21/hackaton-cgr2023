@@ -1,20 +1,53 @@
 [
   {
     "codCourse": "1",
-    "imageURL": "https://objectif-chrome.com/wp-content/uploads/2019/06/module1-actif.jpg",
+    "imageURL": "https://scontent.flim2-1.fna.fbcdn.net/v/t39.30808-6/405372511_3585554121663619_2587776194346707450_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFvhAyB2__x9BXM0t1dpeuOxOb3FiF4TtrE5vcWIXhO2k4d6g0IVfKvUyNRXoqCfx3q6WdTs0mxaT2YUH76JJl1&_nc_ohc=kAmUpr0bai0AX_ukRy_&_nc_zt=23&_nc_ht=scontent.flim2-1.fna&oh=00_AfAbi6LiYkjFIRq9hBabGWLjA-fcIu3F9jah4_BBY6a5nQ&oe=6568249B",
     "title": "Conociendo el Fenómeno del Niño",
-    "description": "Este segmento proporciona información clara sobre qué es el Fenómeno del Niño, cómo afecta a las comunidades y cuáles son los riesgos asociados. Creamos conciencia y comprensión entre los ciudadanos para que estén mejor preparados y puedan identificar los signos tempranos."
+    "description": "Este segmento proporciona información clara sobre qué es el Fenómeno del Niño, cómo afecta a las comunidades y cuáles son los riesgos asociados. Creamos conciencia y comprensión entre los ciudadanos para que estén mejor preparados y puedan identificar los signos tempranos.",
+    "videoURL": "https://www.youtube.com/embed/QhBnZ6NPOY0",
+    "quizURL": "https://forms.gle/39s6ofcoEgNLgTow8",
+    "topic1": "Introducción al Fenómeno del Niño",
+    "topic2": "Efectos en las comunidades",
+    "topic3": "Riesgos asociados",
+    "content11": "Explicación sencilla de qué es el Fenómeno del Niño y cómo se manifiesta.",
+    "content12": "Ejemplos históricos para ilustrar su impacto en diferentes regiones.",
+    "content21": "Descripción de los posibles efectos en el clima local, la agricultura, el suministro de agua y otros aspectos relevantes para la comunidad.",
+    "content22": "Casos de estudio de eventos pasados para comprender los desafíos específicos enfrentados por otras comunidades.",
+    "content31": "Identificación de los riesgos más comunes y peligros potenciales que pueden surgir durante el Fenómeno del Niño.",
+    "content32": "Consejos prácticos sobre cómo minimizar los riesgos en el entorno local."
   },
   {
     "codCourse": "2",
-    "imageURL": "https://objectif-chrome.com/wp-content/uploads/2019/06/module1-actif.jpg",
-    "title": "Tu rol en la comunidad",
-    "description": "La importancia de tu participación en la preparación y respuesta ante el Fenómeno del Niño, te proporcionamos orientación sobre cómo los ciudadanos pueden contribuir activamente, desde la supervisión de obras hasta la difusión de información crucial en sus comunidades."
+    "imageURL": "https://scontent.flim2-4.fna.fbcdn.net/v/t39.30808-6/405252771_3585554151663616_107643142495129904_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeELRnAYqs5RMQMinV-gP2_zbPnG14QsN2Fs-cbXhCw3YVSW18TpwmMzAJj9qbkFLD1Ko1CheXx30w4JX-0YtyyP&_nc_ohc=zIi8EtsJYhcAX9TrlMC&_nc_zt=23&_nc_ht=scontent.flim2-4.fna&oh=00_AfBhTf3GbQGJWW_cpyJ1Cu9UV4v54SeSjwQKK3XBVc6XTA&oe=65680A0B",
+    "title": "Tu Rol en la Comunidad",
+    "description": "La importancia de tu participación en la preparación y respuesta ante el Fenómeno del Niño, te proporcionamos orientación sobre cómo los ciudadanos pueden contribuir activamente, desde la supervisión de obras hasta la difusión de información crucial en sus comunidades.",
+    "videoURL": "https://www.youtube.com/embed/QhBnZ6NPOY0",
+    "quizURL": "https://forms.gle/39s6ofcoEgNLgTow8",
+    "topic1": "Importancia de la participación ciudadana",
+    "topic2": "Supervisión de obras y proyectos",
+    "topic3": "Difusión de información",
+    "content11": "Destacar cómo la participación puede marcar la diferencia en la resiliencia de la comunidad.",
+    "content12": "Ejemplos de comunidades que han logrado una preparación efectiva a través de la colaboración ciudadana.",
+    "content21": "Guía sobre cómo los ciudadanos pueden contribuir monitoreando y evaluando proyectos de construcción en sus áreas.",
+    "content22": "Herramientas disponibles en la plataforma para informar sobre posibles problemas o retrasos.",
+    "content31": "Estrategias para comunicar de manera efectiva información relacionada con el Fenómeno del Niño a otros miembros de la comunidad.",
+    "content32": "Uso de redes sociales, carteles comunitarios y otros métodos de difusión."
   },
   {
     "codCourse": "3",
-    "imageURL": "https://objectif-chrome.com/wp-content/uploads/2019/06/module1-actif.jpg",
-    "title": "Alertas y Previsiones meteorológicas",
-    "description": "Ofreciendo conocimientos prácticos, este segmento educa a los ciudadanos sobre cómo interpretar alertas meteorológicas relacionadas con el Fenómeno del Niño. Se centra en capacitar a la comunidad para comprender las señales climáticas y tomar medidas preventivas con anticipación."
+    "imageURL": "https://scontent.flim2-3.fna.fbcdn.net/v/t39.30808-6/405220117_3585554138330284_2465088005073955877_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE-laU0-NtKDtGksAo--S_pfd6P0SVq0Ad93o_RJWrQB_35g9P3J6oFZtvK2-w-D9K7Uue2Q5eFF922uUk3wUfM&_nc_ohc=H2nB1k-_eRoAX8UFuG0&_nc_zt=23&_nc_ht=scontent.flim2-3.fna&oh=00_AfCDZqx3SJ9AtgEmgtYOf04SrjzqHxyo5pbovosNTPLbGA&oe=65687F1C",
+    "title": "Alertas y Previsiones Meteorológicas",
+    "description": "Ofreciendo conocimientos prácticos, este segmento educa a los ciudadanos sobre cómo interpretar alertas meteorológicas relacionadas con el Fenómeno del Niño. Se centra en capacitar a la comunidad para comprender las señales climáticas y tomar medidas preventivas con anticipación.",
+    "videoURL": "https://www.youtube.com/embed/QhBnZ6NPOY0",
+    "quizURL": "https://forms.gle/39s6ofcoEgNLgTow8",
+    "topic1": "Interpretación de alertas meteorológicas",
+    "topic2": "Preparación anticipada",
+    "topic3": "Acceso a información en la plataforma",
+    "content11": "Educación sobre cómo entender las alertas meteorológicas relacionadas con el Fenómeno del Niño.",
+    "content12": "Significado de términos técnicos y cómo actuar en función de la información recibida.",
+    "content21": "Consejos sobre cómo prepararse con anticipación ante alertas meteorológicas específicas.",
+    "content22": " Recursos y listas de verificación para la creación de kits de emergencia.",
+    "content31": "Demostración de cómo la plataforma proporciona información en tiempo real sobre alertas meteorológicas y eventos relacionados.",
+    "content32": "Guía sobre cómo acceder a la información y utilizarla para prepararse para el Fenómeno del Niño."
   }
 ]

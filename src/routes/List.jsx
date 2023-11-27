@@ -1,4 +1,4 @@
-import { Search2Icon, ArrowLeftIcon } from '@chakra-ui/icons';
+import { Search2Icon } from '@chakra-ui/icons';
 import {
   Container,
   SimpleGrid,
@@ -6,7 +6,6 @@ import {
   Divider,
   Heading,
 } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
 import { CardSelect, CardInfo } from '../components/list';
 import departmentsPeru from '../data/departmentsPeru.json';
 import provincesLima from '../data/provincesLima.json';
@@ -31,17 +30,6 @@ export const List = () => {
 
   return (
     <Container maxWidth="8xl" padding={10}>
-      {/* <Link to="/hackaton-cgr2023/inicio">
-        <Button
-          leftIcon={<ArrowLeftIcon />}
-          colorScheme="gray"
-          size="md"
-          variant="outline"
-          marginBottom={5}
-        >
-          Regresar
-        </Button>
-      </Link> */}
       <Heading size="lg" marginBottom={10} color="red.600">
         Obras para la Reconstrucción con Cambios 2023
       </Heading>
