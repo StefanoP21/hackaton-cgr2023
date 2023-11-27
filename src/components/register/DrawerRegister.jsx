@@ -23,6 +23,15 @@ export const DrawerRegister = ({ isOpen, onClose, onRegister }) => {
   const [showPassword, setShowPassword] = useState(false);
   const firstField = useRef();
 
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassowrd] = useState('');
+
+  const handleButtonClick = () => {
+    onRegister(firstName, lastName, email, password);
+  };
+
   return (
     <>
       <Drawer
@@ -43,8 +52,11 @@ export const DrawerRegister = ({ isOpen, onClose, onRegister }) => {
                   <FormLabel htmlFor="firstName">Nombres</FormLabel>
                   <Input
                     ref={firstField}
+                    type="text"
                     id="firstName"
                     placeholder="Ingresa tus nombres"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
                   />
                 </FormControl>
               </Box>
@@ -52,7 +64,13 @@ export const DrawerRegister = ({ isOpen, onClose, onRegister }) => {
               <Box>
                 <FormControl isRequired>
                   <FormLabel htmlFor="lastName">Apellidos</FormLabel>
-                  <Input id="lastName" placeholder="Ingresa tus apellidos" />
+                  <Input
+                    type="text"
+                    id="lastName"
+                    placeholder="Ingresa tus apellidos"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                  />
                 </FormControl>
               </Box>
 
@@ -64,6 +82,8 @@ export const DrawerRegister = ({ isOpen, onClose, onRegister }) => {
                       type="email"
                       id="email"
                       placeholder="Ingresa tu correo"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                     <InputRightAddon>.com</InputRightAddon>
                   </InputGroup>
@@ -76,7 +96,10 @@ export const DrawerRegister = ({ isOpen, onClose, onRegister }) => {
                   <InputGroup>
                     <Input
                       type={showPassword ? 'text' : 'password'}
+                      id="password"
                       placeholder="Ingresa tu contraseña"
+                      value={password}
+                      onChange={(e) => setPassowrd(e.target.value)}
                     />
                     <InputRightElement h={'full'}>
                       <Button
@@ -98,7 +121,7 @@ export const DrawerRegister = ({ isOpen, onClose, onRegister }) => {
             <Button variant="outline" mr={3} onClick={onClose}>
               Cancelar
             </Button>
-            <Button colorScheme="red" onClick={onRegister}>
+            <Button colorScheme="red" onClick={handleButtonClick}>
               Enviar
             </Button>
           </DrawerFooter>

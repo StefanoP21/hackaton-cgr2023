@@ -1,4 +1,4 @@
-import { InfoIcon } from '@chakra-ui/icons';
+import { CheckCircleIcon, InfoIcon } from '@chakra-ui/icons';
 import {
   Card,
   CardBody,
@@ -22,7 +22,11 @@ export const CardLearn = ({ courses }) => {
     setShowDrawer((prevState) => !prevState);
   };
 
-  const handleRegistration = () => {
+  const handleRegistration = (firstName, lastName, email, password) => {
+    if (!firstName || !lastName || !email || !password) {
+      alert('Por favor, completa todos los campos');
+      return;
+    }
     // Aquí es donde manejas el registro del usuario
     // Después de que el usuario se registre, cambia isRegistered a true
     setIsRegistered(true);
@@ -72,16 +76,20 @@ export const CardLearn = ({ courses }) => {
                 key={codCourse}
               >
                 <Button
-                  leftIcon={<InfoIcon />}
-                  colorScheme="red"
+                  leftIcon={isRegistered ? <CheckCircleIcon /> : <InfoIcon />}
+                  colorScheme={isRegistered ? 'green' : 'red'}
                   size="md"
                   variant="solid"
                   onClick={toggleDrawer}
                 >
-                  Inicia aquí
+                  {isRegistered ? 'Ver curso' : 'Registrarse para ver curso'}
                 </Button>
               </Link>
-              <DrawerRegister isOpen={showDrawer} onClose={toggleDrawer} />
+              <DrawerRegister
+                isOpen={showDrawer}
+                onClose={toggleDrawer}
+                onRegister={handleRegistration}
+              />
             </CardFooter>
           </Card>
         )
