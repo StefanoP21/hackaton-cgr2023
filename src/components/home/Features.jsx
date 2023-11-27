@@ -1,4 +1,4 @@
-import { StarIcon, QuestionIcon, ViewIcon } from '@chakra-ui/icons';
+import { ChatIcon, PlusSquareIcon, ViewIcon } from '@chakra-ui/icons';
 import { Box, Container, Flex, Heading, Stack, Text } from '@chakra-ui/react';
 import { CardHome } from './CardHome';
 
@@ -8,7 +8,7 @@ const features = [
     heading: 'Fomentar la Participación Ciudadana',
     description:
       'Buscamos incrementar la participación de la comunidad en la supervisión y evaluación de proyectos en construcción. Empoderamos a los ciudadanos para que sean partícipes en el proceso, compartan sus observaciones, y contribuyan con su experiencia.',
-    icon: StarIcon,
+    icon: ChatIcon,
   },
   {
     key: 2,
@@ -22,7 +22,7 @@ const features = [
     heading: 'Fortalecer la Resiliencia Comunitaria',
     description:
       'Facilitamos la respuesta proactiva de la comunidad ante posibles riesgos asociados al Fenómeno del Niño. Buscamos proporcionar alertas tempranas, información relevante y recursos educativos para que las comunidades estén mejor preparadas.',
-    icon: QuestionIcon,
+    icon: PlusSquareIcon,
   },
 ];
 

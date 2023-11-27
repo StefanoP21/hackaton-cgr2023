@@ -1,6 +1,15 @@
 import { Flex, Box } from '@chakra-ui/react';
 import { Route, Routes } from 'react-router-dom';
-import { Home, List, Learn, Infobra, Course, NotFound } from './routes';
+import {
+  Home,
+  List,
+  Learn,
+  Infobra,
+  Course,
+  NotFound,
+  Login,
+  Register,
+} from './routes';
 import { NavBar, Footer } from './shared';
 
 export const App = () => {
@@ -15,6 +24,8 @@ export const App = () => {
             element={
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="login" element={<Login />} />
+                <Route path="register" element={<Register />} />
                 <Route path="inicio" element={<Home />} />
                 <Route path="lista" element={<List />} />
                 <Route

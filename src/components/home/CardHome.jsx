@@ -19,7 +19,7 @@ export const CardHome = ({ heading, description, icon }) => {
       overflow="hidden"
       p={5}
     >
-      <Stack align={'start'} spacing={2}>
+      <Stack align={'center'} spacing={2}>
         <Flex
           w={16}
           h={16}
@@ -27,13 +27,15 @@ export const CardHome = ({ heading, description, icon }) => {
           justify={'center'}
           color={'white'}
           rounded={'full'}
-          bg={useColorModeValue('red.200', 'red.500')}
+          bg={useColorModeValue('red.400', 'red.600')}
         >
           <Icon as={icon} w={10} h={10} />
         </Flex>
         <Box mt={2}>
-          <Heading size="md">{heading}</Heading>
-          <Text mt={4} fontSize={'sm'}>
+          <Heading size="md" textAlign="center">
+            {heading}
+          </Heading>
+          <Text mt={4} fontSize={'sm'} textAlign="justify">
             {description}
           </Text>
         </Box>

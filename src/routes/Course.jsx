@@ -2,6 +2,8 @@ import { ArrowLeftIcon } from '@chakra-ui/icons';
 import { Button, Container, GridItem, SimpleGrid } from '@chakra-ui/react';
 import { CourseAccordion, CourseVideo } from '../components/course';
 import { Link, useLocation, useParams } from 'react-router-dom';
+import { useState } from 'react';
+import { DrawerRegister } from '../components/register/DrawerRegister';
 
 export const Course = () => {
   const { codCourse } = useParams();
