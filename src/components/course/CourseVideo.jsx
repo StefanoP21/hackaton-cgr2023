@@ -17,13 +17,15 @@ export const CourseVideo = ({ title, videoURL, quizURL }) => {
       <AspectRatio maxW="650px" ratio={2} my={10}>
         <iframe title={title} src={videoURL} allowFullScreen />
       </AspectRatio>
-      <Button
-        rightIcon={<ExternalLinkIcon />}
-        variant="solid"
-        colorScheme="red"
-      >
-        Tomar evaluación
-      </Button>
+      <Link to={quizURL} target="_blank">
+        <Button
+          rightIcon={<ExternalLinkIcon />}
+          variant="solid"
+          colorScheme="red"
+        >
+          Cuestionario
+        </Button>
+      </Link>
     </>
   );
 };
