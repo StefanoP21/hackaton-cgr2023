@@ -1,8 +1,42 @@
-# React + Vite
+# APUCHAY
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web multiplataforma para brindar control a los ciudadnos sobre las obras que se ejecutan en el contexto del Fenómeno del Niño Costero, como parte de la solución al Reto 2 "QwhayTech Monitor" de la primera Hackathón de La Contraloría Genereral de la Republica del Perú.
 
-Currently, two official plugins are available:
+## Requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js
+- npm
+- yarn
+
+## Instalación
+
+Clona el repositorio y navega hasta el directorio:
+
+```bash
+git clone https://github.com/StefanoP21/hackaton-cgr2023.git
+```
+
+## Instala las dependencias:
+
+```bash
+npm install
+yarn
+```
+
+## Ejecución en modo de desarrollo
+
+Para iniciar la aplicación en modo de desarrollo, ejecuta:
+
+```bash
+npm run dev
+yarn dev
+```
+
+## Ejecución en modo de producción
+
+Para construir la aplicación para producción, ejecuta:
+
+```bash
+npm run build
+yarn build
+```
