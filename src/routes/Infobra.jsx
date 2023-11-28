@@ -12,9 +12,10 @@ export const Infobra = () => {
     'imageURL',
     'name',
     'entity',
-    'modality',
     'type',
     'state',
+    'initialDate',
+    'finalDate',
     'local',
     'address',
     'amount',
@@ -34,9 +35,10 @@ export const Infobra = () => {
     imageURL,
     name,
     entity,
-    modality,
     type,
     state,
+    initialDate,
+    finalDate,
     local,
     address,
     amount,
@@ -68,9 +70,10 @@ export const Infobra = () => {
         imageURL={imageURL}
         name={name}
         entity={entity}
-        modality={modality}
         type={type}
         state={state}
+        initialDate={initialDate}
+        finalDate={finalDate}
         local={local}
         address={address}
         amount={amount}

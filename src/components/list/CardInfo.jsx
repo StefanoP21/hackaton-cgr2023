@@ -21,9 +21,10 @@ export const CardInfo = ({ items }) => {
           imageURL,
           name,
           entity,
-          modality,
           type,
           state,
+          initialDate,
+          finalDate,
           local,
           address,
           amount,
@@ -55,7 +56,7 @@ export const CardInfo = ({ items }) => {
             <Divider />
             <CardFooter>
               <Link
-                to={`/hackaton-cgr2023/lista/infobra/${codINFOBRAS}?imageURL=${imageURL}&entity=${entity}&name=${name}&amount=${amount}&local=${local}&address=${address}&enterprise=${enterprise}&ruc=${ruc}&person=${person}&dni=${dni}&cip=${cip}&modality=${modality}&type=${type}&state=${state}`}
+                to={`/hackaton-cgr2023/lista/infobra/${codINFOBRAS}?imageURL=${imageURL}&entity=${entity}&name=${name}&amount=${amount}&local=${local}&address=${address}&enterprise=${enterprise}&ruc=${ruc}&person=${person}&dni=${dni}&cip=${cip}&type=${type}&state=${state}&initialDate=${initialDate}&finalDate=${finalDate}`}
                 key={codINFOBRAS}
               >
                 <Button

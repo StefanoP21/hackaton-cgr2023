@@ -14,8 +14,8 @@ import {
   FormLabel,
   Input,
   InputGroup,
-  InputRightAddon,
   InputRightElement,
+  FormErrorMessage,
 } from '@chakra-ui/react';
 import { useRef, useState } from 'react';
 
@@ -27,9 +27,28 @@ export const DrawerRegister = ({ isOpen, onClose, onRegister }) => {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassowrd] = useState('');
+  const [errors, setErrors] = useState({});
 
-  const handleButtonClick = () => {
-    onRegister(firstName, lastName, email, password);
+  const validateForm = () => {
+    const fields = {
+      firstName: { value: firstName, error: 'El nombre es requerido' },
+      lastName: { value: lastName, error: 'El apellido es requerido' },
+      email: { value: email, error: 'El correo es requerido' },
+      password: { value: password, error: 'La contraseña es requerida' },
+    };
+
+    let newErrors = {};
+
+    for (const [field, { value, error }] of Object.entries(fields)) {
+      if (!value) {
+        newErrors[field] = error;
+      }
+    }
+    setErrors(newErrors);
+
+    if (Object.keys(newErrors).length === 0) {
+      onRegister(firstName, lastName, email, password);
+    }
   };
 
   return (
@@ -48,7 +67,7 @@ export const DrawerRegister = ({ isOpen, onClose, onRegister }) => {
           <DrawerBody>
             <Stack spacing="24px">
               <Box>
-                <FormControl isRequired>
+                <FormControl isRequired isInvalid={errors.firstName}>
                   <FormLabel htmlFor="firstName">Nombres</FormLabel>
                   <Input
                     ref={firstField}
@@ -58,11 +77,12 @@ export const DrawerRegister = ({ isOpen, onClose, onRegister }) => {
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
                   />
+                  <FormErrorMessage>{errors.firstName}</FormErrorMessage>
                 </FormControl>
               </Box>
 
               <Box>
-                <FormControl isRequired>
+                <FormControl isRequired isInvalid={errors.lastName}>
                   <FormLabel htmlFor="lastName">Apellidos</FormLabel>
                   <Input
                     type="text"
@@ -71,27 +91,26 @@ export const DrawerRegister = ({ isOpen, onClose, onRegister }) => {
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
                   />
+                  <FormErrorMessage>{errors.lastName}</FormErrorMessage>
                 </FormControl>
               </Box>
 
               <Box>
-                <FormControl isRequired>
+                <FormControl isRequired isInvalid={errors.email}>
                   <FormLabel htmlFor="email">Correo</FormLabel>
-                  <InputGroup>
-                    <Input
-                      type="email"
-                      id="email"
-                      placeholder="Ingresa tu correo"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
-                    <InputRightAddon>.com</InputRightAddon>
-                  </InputGroup>
+                  <Input
+                    type="email"
+                    id="email"
+                    placeholder="Ingresa tu correo"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                  <FormErrorMessage>{errors.email}</FormErrorMessage>
                 </FormControl>
               </Box>
 
               <Box>
-                <FormControl isRequired>
+                <FormControl isRequired isInvalid={errors.password}>
                   <FormLabel htmlFor="password">Contraseña</FormLabel>
                   <InputGroup>
                     <Input
@@ -112,6 +131,7 @@ export const DrawerRegister = ({ isOpen, onClose, onRegister }) => {
                       </Button>
                     </InputRightElement>
                   </InputGroup>
+                  <FormErrorMessage>{errors.password}</FormErrorMessage>
                 </FormControl>
               </Box>
             </Stack>
@@ -121,7 +141,7 @@ export const DrawerRegister = ({ isOpen, onClose, onRegister }) => {
             <Button variant="outline" mr={3} onClick={onClose}>
               Cancelar
             </Button>
-            <Button colorScheme="red" onClick={handleButtonClick}>
+            <Button colorScheme="red" onClick={validateForm}>
               Enviar
             </Button>
           </DrawerFooter>

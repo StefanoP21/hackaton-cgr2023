@@ -18,9 +18,10 @@ export const CardObra = ({
   imageURL,
   name,
   entity,
-  modality,
   type,
   state,
+  initialDate,
+  finalDate,
   local,
   address,
   amount,
@@ -59,20 +60,29 @@ export const CardObra = ({
           <Heading size="md" paddingBottom="4">
             {name}
           </Heading>
-          <Text py="2" bg="red.200">
+          <Text
+            py="2"
+            paddingStart={2}
+            bg="red.200"
+            w="210px"
+            borderRadius={10}
+          >
             <b>Código INFOBRAS:</b> {codINFOBRAS}
           </Text>
           <Text py="2">
             <b>Entidad:</b> {entity}
           </Text>
           <Text py="2">
-            <b>Modalidad:</b> {modality}
-          </Text>
-          <Text py="2">
             <b>Tipo de obra:</b> {type}
           </Text>
           <Text py="2">
             <b>Estado:</b> {state}
+          </Text>
+          <Text py="2">
+            <b>Fecha de inicio:</b> {initialDate}
+          </Text>
+          <Text py="2">
+            <b>Fecha de fin:</b> {finalDate}
           </Text>
           <Text py="2">
             <b>Ubicación:</b> {local}
@@ -82,6 +92,12 @@ export const CardObra = ({
           </Text>
           <Text py="2">
             <b>Monto aprobado:</b> S/. {amount}
+          </Text>
+          <Text py="2" color="blue.600">
+            <b>
+              *Haga click en el botón de copiar el código INFOBRAS para
+              completar su reporte
+            </b>
           </Text>
         </CardBody>
 

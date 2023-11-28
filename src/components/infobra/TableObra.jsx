@@ -39,7 +39,7 @@ export const TableObra = ({ enterprise, ruc, amount, person, dni, cip }) => {
                 </Thead>
                 <Tbody>
                   <Tr>
-                    <Td textAlign="center">{enterprise}L</Td>
+                    <Td textAlign="center">{enterprise}</Td>
                   </Tr>
                 </Tbody>
                 <Thead>

@@ -9,28 +9,47 @@ import {
   Text,
   Divider,
   Button,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { DrawerRegister } from '../register/DrawerRegister';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export const CardLearn = ({ courses }) => {
-  const [isRegistered, setIsRegistered] = useState(false);
   const [showDrawer, setShowDrawer] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [user, setUser] = useState({});
+  const [isRegistered, setIsRegistered] = useState(false);
+
+  useEffect(() => {
+    const registeredUser = localStorage.getItem('user');
+    const registered = localStorage.getItem('isRegistered');
+    if (registeredUser) {
+      setUser(JSON.parse(registeredUser));
+    }
+    if (registered) {
+      setIsRegistered(JSON.parse(registered));
+    }
+  }, []);
 
   const toggleDrawer = () => {
     setShowDrawer((prevState) => !prevState);
   };
 
   const handleRegistration = (firstName, lastName, email, password) => {
-    if (!firstName || !lastName || !email || !password) {
-      alert('Por favor, completa todos los campos');
-      return;
-    }
-    // Aquí es donde manejas el registro del usuario
-    // Después de que el usuario se registre, cambia isRegistered a true
+    const newUser = { firstName, lastName, email, password };
+    setUser(newUser);
     setIsRegistered(true);
+    localStorage.setItem('user', JSON.stringify(newUser));
+    localStorage.setItem('isRegistered', true);
     setShowDrawer(false);
+    setShowModal(true);
   };
 
   return (
@@ -94,6 +113,30 @@ export const CardLearn = ({ courses }) => {
           </Card>
         )
       )}
+      <Modal
+        isOpen={showModal}
+        size={{ base: 'xs', md: 'sm' }}
+        isCentered
+        onClose={() => setShowModal(false)}
+      >
+        <ModalOverlay />
+        <ModalContent bg="gray.800" color="white" p={2}>
+          <ModalHeader fontSize="xl" fontWeight="bold">
+            Registro exitoso
+          </ModalHeader>
+          <ModalCloseButton color="white" />
+          <ModalBody>
+            {user
+              ? `¡Hola, ${user.firstName}! Te has registrado con éxito.`
+              : 'Te has registrado con éxito!'}
+          </ModalBody>
+          <ModalFooter>
+            <Button colorScheme="red" onClick={() => setShowModal(false)}>
+              Cerrar
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
     </>
   );
 };

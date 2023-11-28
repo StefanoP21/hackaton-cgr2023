@@ -4,4 +4,3 @@ export * from './Infobra';
 export * from './Learn';
 export * from './Course';
 export * from './NotFound';
-export * from './Login';
